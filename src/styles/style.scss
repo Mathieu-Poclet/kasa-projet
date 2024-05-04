@@ -5,11 +5,13 @@ html, body {
 body {
     display: flex;       
     margin: 0;
+    font-family: montserrat;
 }
 
 div#root{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .kasa-header, .main {
@@ -30,7 +32,6 @@ div#root{
         align-items: center;
         gap: 57px;
         font-weight: 500;
-        font-family: monsterrat;
         font-size: 24px;
         
         >* {
