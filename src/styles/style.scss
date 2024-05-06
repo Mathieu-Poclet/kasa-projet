@@ -15,7 +15,7 @@ div#root{
 }
 
 .kasa-header, .main {
-    padding: 45px 100px 0 100px;
+    padding: 45px 100px 45px 100px;
 }
 
 .kasa-header {
@@ -45,8 +45,11 @@ div#root{
     }
 }
 
-.main {  
-    flex-grow: 1;   
+.main {
+    display: flex;
+    flex-direction: column;  
+    flex-grow: 1;
+    gap: 50px;
 }
 
 .kasa-footer {
