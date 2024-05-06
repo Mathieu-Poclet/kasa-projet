@@ -1,52 +1,16 @@
-import React, { Component } from "react";
-import "../styles/card.scss";
-import Datas from "../datas/datas.json";
+import "../styles/card.scss"
 
 
-
-const handleClick = (title) => {
-    console.log(title)
-    
+const handleClick = (cardTitle) => {
+    console.log(cardTitle)    
 }
-   
-    export class Card extends Component {
-        render() {
-            return (
-                <div className="toto">
-                    {Datas.map((item, i) => (
-                        <div key={item.title} className="card" onClick={() => handleClick(item.title)}>
 
-                            <h2>{item.title}</h2>
+function Card({title,id}) {
+    return (
+        <div className="card" onClick={() => handleClick(id)}>
+            <h2>{title}</h2>
+        </div>
+    )
+}
 
-                        </div>
-                    ))}
-                </div>
-            )
-        }
-    }
-
-export default Card;
-
-
-// export class Card extends Component {
-//     render() {
-//         return (
-//             <div className="toto">                                               
-//                 {Datas.map((item, i) => (
-//                     <ul className="card" onClick={() => handleClick(item.title)}>
-//                         <li key={item.title}>{item.title}</li>
-//                     </ul>
-//                 ))}      
-//             </div>
-//         );
-//     }
-// }
-// export default Card;
-
-// {Datas.map((item, i, cover) => (
-//     <ul>
-//         <li key={i}>{item.id}</li>
-//         <li key={i}><img src={item.cover} alt="toto" /></li>
-                   
-//     </ul>                                    
-// ))}    
+export default Card
