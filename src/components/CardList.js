@@ -24,10 +24,10 @@ import { Link } from "react-router-dom";
 function CardList() {
     return (
         <div className="container">
-                     {Datas.map(({ title, id }) => (
+                     {Datas.map(({ id, title }) => (
                         <div key={id}>
                             <Link to="/appartement">
-                                <Card  title={title} id={id}/>
+                                <Card id={id} title={title} />
                             </Link>
                         </div>
                     ))}
