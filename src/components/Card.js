@@ -1,11 +1,13 @@
-import { useState } from "react"
+//import { useState } from "react"
 import "../styles/card.scss"
-import Datas from "../datas/datas.json";
+//import Datas from "../datas/datas.json";
 
-function Card({title, id}) {
+import { Link } from "react-router-dom";
+
+function Card({title, id, datas, setDatas}) {
 
     //state
-    const[datas, setDatas] = useState(Datas)
+    //const[datas, setDatas] = useState(Datas)
     //console.log(datas)
 
 
@@ -13,20 +15,22 @@ function Card({title, id}) {
     //comportement
     const handleClick = (id) => {
         const datasCopy = [...datas]
-        //console.log(datasCopy)
+        console.log(id)
 
         const dataCopyUpdated = datasCopy.filter(data => data.id === id)
         setDatas(dataCopyUpdated)
-        dataCopyUpdated.map((data) => (
-            console.log(data.title)
-        ))
+        // dataCopyUpdated.map((data) => (
+        //     console.log(data.title)
+        // ))
         
         
 } 
     return (
-        <div className="card" onClick={() => handleClick(id)}>
-            <h2>{title}</h2>
-        </div>
+        <Link to="/appartement">
+            <div className="card" onClick={() => handleClick(id)}>
+                <h2>{title}</h2>
+            </div>
+        </Link>
     )
 }
 

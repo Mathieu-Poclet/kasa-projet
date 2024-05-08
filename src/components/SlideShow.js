@@ -6,36 +6,41 @@ import { useState } from "react";
 
 
 
-function SlideShow(photo) {
+function SlideShow({photo, datas, setDatas}) {
+
+    datas.map((data) => (
+        console.log(data.title)
+    ))
+
+    
 
     //state
-    const[datas, setDatas] = useState(Datas)
+    
     
     
     
 
     //comportement
-    const toto = () => {
-        const datasCopy = [...datas]
-       
-
-        const dataCopyUpdated = datasCopy.filter(data => data.id === "c67ab8a7")
-        
-        setDatas(dataCopyUpdated)
-        
-    }
+    
+    
     
 
     //affichage
     return (
         <div>
-            <img src={photo} alt="apreçu de l'appartement" />
-            <ul>
-                {datas.map((data) => {
-                    return <li key={data.id}>{data.title}</li>
-                })}
-            </ul>
-            <button onClick={toto}>clique</button>
+            
+            {datas.map((data) => {
+                return (
+                    <ul>
+                        {data.title}<br />
+                        {data.id}<br />
+                        {data.pictures.map(pic => (<li key={pic}><img src={pic} alt="toto"></img></li>))}               
+                        
+                    </ul>
+                    
+                )
+            })}
+                
         </div>
     )
 }

@@ -1,10 +1,15 @@
 import SlideShow from "../components/SlideShow"
 
 
-function AppartementPage() {
+function AppartementPage({datas, setDatas}) {
+
+//   datas.map((data) => (
+//     console.log(data.title)
+// ))
+
   return (
     <div className="main">
-      <SlideShow />
+      <SlideShow datas={datas} setDatas={setDatas} />
     </div>
   )
 }
