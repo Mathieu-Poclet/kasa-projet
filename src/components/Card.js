@@ -17,7 +17,10 @@ function Card({title, id}) {
 
         const dataCopyUpdated = datasCopy.filter(data => data.id === id)
         setDatas(dataCopyUpdated)
-        console.log(datas)
+        dataCopyUpdated.map((data) => (
+            console.log(data.title)
+        ))
+        
         
 } 
     return (

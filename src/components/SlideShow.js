@@ -6,21 +6,21 @@ import { useState } from "react";
 
 
 
-function SlideShow(photo, id) {
+function SlideShow(photo) {
 
     //state
     const[datas, setDatas] = useState(Datas)
-    console.log(datas)
+    
     
     
 
     //comportement
     const toto = () => {
         const datasCopy = [...datas]
-        //console.log(datasCopy)
+       
 
         const dataCopyUpdated = datasCopy.filter(data => data.id === "c67ab8a7")
-        //console.log(dataCopyUpdated)
+        
         setDatas(dataCopyUpdated)
         
     }
