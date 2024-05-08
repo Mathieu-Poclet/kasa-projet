@@ -1,12 +1,11 @@
-import plage from "../assets/plage.png"
 import "../styles/banner.scss"
 
-function Banner() {
+function Banner({photo, opacity}) {
     return (
-        <div className='banner'>
-            <img src={plage} alt="phot d'une plage" className="bannerImg" />
-            <div></div>
-            <p>Chez vous, partout et ailleurs</p>
+        <div className="banner">
+            <img src={photo} alt="paysage" className="bannerImg" />  
+            <div className={opacity}></div>  
+               
         </div>
     )
 }

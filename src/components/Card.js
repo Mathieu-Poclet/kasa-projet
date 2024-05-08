@@ -2,7 +2,7 @@ import "../styles/card.scss"
 
 
 const handleClick = (cardTitle) => {
-    console.log(cardTitle)    
+    console.log(cardTitle)   
 }
 
 function Card({title,id}) {
