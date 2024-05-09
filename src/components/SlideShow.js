@@ -1,47 +1,15 @@
 import "../styles/slideShow.scss"
 
-import Datas from "../datas/datas.json";
+import Gallery from "./Gallery"
 
-import { useState } from "react";
+function SlideShow({datas, setDatas}) {
 
+    // datas.map((data) => (
+    //     console.log(data.title)
+    // ))  
 
-
-function SlideShow({photo, datas, setDatas}) {
-
-    datas.map((data) => (
-        console.log(data.title)
-    ))
-
-    
-
-    //state
-    
-    
-    
-    
-
-    //comportement
-    
-    
-    
-
-    //affichage
     return (
-        <div>
-            
-            {datas.map((data) => {
-                return (
-                    <ul>
-                        {data.title}<br />
-                        {data.id}<br />
-                        {data.pictures.map(pic => (<li key={pic}><img src={pic} alt="toto"></img></li>))}               
-                        
-                    </ul>
-                    
-                )
-            })}
-                
-        </div>
+        <Gallery datas={datas} setDatas={setDatas}/>
     )
 }
 

@@ -1,11 +1,6 @@
 import SlideShow from "../components/SlideShow"
 
-
 function AppartementPage({datas, setDatas}) {
-
-//   datas.map((data) => (
-//     console.log(data.title)
-// ))
 
   return (
     <div className="main">

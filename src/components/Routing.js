@@ -12,7 +12,7 @@ import { useState } from 'react'
 import Datas from "../datas/datas.json";
 
 
-function Rater() {
+function Routing() {
 
     const[datas, setDatas] = useState(Datas)
     // datas.map((data) => (
@@ -35,7 +35,7 @@ function Rater() {
     )
 }
 
-export default Rater
+export default Routing
 
 
       

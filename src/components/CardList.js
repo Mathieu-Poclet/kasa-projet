@@ -1,7 +1,21 @@
-//import React from "react";
 import "../styles/cardList.scss";
-import Datas from "../datas/datas.json";
 import Card from "./Card";
+
+function CardList({datas, setDatas}) {    
+
+    return (
+        <div className="container">
+                     {datas.map(({ id, title }) => (
+                        <div key={id}>                           
+                            <Card id={id} title={title} datas={datas} setDatas={setDatas} />                     
+                        </div>
+                    ))}
+                </div>      
+    )
+}
+
+export default CardList;
+
 
 //import { useState } from "react";
    
@@ -20,20 +34,3 @@ import Card from "./Card";
 //         )
 //     }
 // }
-
-function CardList({datas, setDatas}) {
-
-    
-
-    return (
-        <div className="container">
-                     {Datas.map(({ id, title }) => (
-                        <div key={id}>                            
-                            <Card id={id} title={title} datas={datas} setDatas={setDatas} />                     
-                        </div>
-                    ))}
-                </div>      
-    )
-}
-
-export default CardList;
