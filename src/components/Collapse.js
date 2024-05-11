@@ -13,7 +13,7 @@ const Collapse = ({title, content}) => {
         <div className="collapse">
             <div className="collapse-title">
                 {title} 
-                <i class="fa-solid fa-chevron-up pointer" onClick={handleClick}></i>
+                <i className="fa-solid fa-chevron-up pointer" onClick={handleClick}></i>
             </div>
             {open && (
                 <div className="collapse-content">

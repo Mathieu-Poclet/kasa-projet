@@ -1,14 +1,14 @@
 import SlideShow from "../components/SlideShow"
 import { useState } from "react"
 
-function AppartementPage({datas, setDatas}) {
+function AppartementPage() {
 
   const dataLocal = localStorage.getItem("newData")
-  const[newDatas, setNewDatas] = useState(JSON.parse(dataLocal))
+  const[newDatas] = useState(JSON.parse(dataLocal))
 
   return (
     <div className="main">
-      <SlideShow datas={newDatas} setDatas={setDatas} />
+      <SlideShow datas={newDatas} />
     </div>
   )
 }

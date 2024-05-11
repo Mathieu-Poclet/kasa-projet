@@ -3,7 +3,7 @@ import Banner from '../components/Banner'
 import CardList from '../components/CardList'
 import plage from "../assets/plage.png"
 
-function Home({datas, setDatas}) {  
+function Home() {  
 
   return (
     <div className='main'>
@@ -11,7 +11,7 @@ function Home({datas, setDatas}) {
         <Banner photo={plage} opacity={"home"} />
         <h1 className='bannerTitle'>Chez vous, partout et ailleurs</h1>
       </div>
-      <CardList datas={datas} setDatas={setDatas} />      
+      <CardList />      
     </div>
   )
 }

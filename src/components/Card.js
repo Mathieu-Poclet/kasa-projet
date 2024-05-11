@@ -6,7 +6,7 @@ function Card({title, id, datas, setDatas}) {
     const handleClick = (id) => {
         const datasCopy = [...datas]
         const dataCopyUpdated = datasCopy.filter(data => data.id === id)
-        setDatas(dataCopyUpdated)      
+        //setDatas(dataCopyUpdated)      
         
         //local storage
         localStorage.setItem("newData", JSON.stringify(dataCopyUpdated))

@@ -1,7 +1,12 @@
 import "../styles/cardList.scss"
 import Card from "./Card"
+import { useState } from 'react'
+import Datas from "../datas/datas.json";
 
-function CardList({datas, setDatas}) {    
+
+function CardList() {    
+
+    const[datas, setDatas] = useState(Datas)
 
     return (
         <div className="container">
