@@ -6,3 +6,52 @@
         object-fit: cover;
     }    
 }
+
+
+/* slideShow.scss */
+// .slideshow-container {
+//     position: relative;
+//     width: 100%;
+// }
+
+// .slides {
+//     display: flex;
+//     overflow: hidden;
+// }
+
+// .slide {
+//     display: none;
+//     width: 100%;
+// }
+
+// .slide.active {
+//     display: block;
+// }
+
+// .controls {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// .pagination {
+//     text-align: center;
+//     margin-top: 10px;
+// }
+
+// .dot {
+//     display: inline-block;
+//     width: 10px;
+//     height: 10px;
+//     border-radius: 50%;
+//     background-color: #bbb;
+//     margin: 0 5px;
+//     cursor: pointer;
+// }
+
+// .dot.active {
+//     background-color: #333;
+// }
