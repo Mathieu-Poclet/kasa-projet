@@ -1,4 +1,5 @@
 import SlideShow from "../components/SlideShow"
+import Property from "../components/Property"
 import { useState } from "react"
 
 function AppartementPage() {
@@ -9,6 +10,7 @@ function AppartementPage() {
   return (
     <div className="main">
       <SlideShow datas={newDatas} />
+      <Property datas={newDatas}/>
     </div>
   )
 }

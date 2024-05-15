@@ -1,4 +1,6 @@
 import React from 'react'
+import './styles/style.scss'
+
 import { createRoot } from 'react-dom/client'
 import Routing from './components/Routing'
 

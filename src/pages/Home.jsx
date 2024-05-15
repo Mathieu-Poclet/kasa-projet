@@ -1,4 +1,3 @@
-import '../styles/style.scss'
 import Banner from '../components/Banner'
 import CardList from '../components/CardList'
 import plage from "../assets/plage.png"
