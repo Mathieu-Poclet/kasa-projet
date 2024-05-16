@@ -1,9 +1,7 @@
 .collapse {
-   // background-color: rgba(246, 246, 246, 0.45);
     border-radius: 5px;
     margin: 0 108px;
     
-
     .collapse-title {
         display: flex;
         justify-content: space-between;
@@ -19,49 +17,43 @@
         z-index: 1;
         
         font: {
-            size: 24px;
+            size: 18px;
             weight: 700;
         }
-        
-        .openRotation {
-            animation: openRotation 500ms forwards;
-        }
-
-        .closeRotation {
-            animation: closeRotation 500ms forwards;
-        }
-        
-        @keyframes openRotation {
-            0%{transform : rotate(0deg)}
-            100%{transform : rotate(-180deg);}
-        }
-
-        @keyframes closeRotation {
-            0%{transform : rotate(-180deg)}
-            100%{transform : rotate(0deg);}
-        }
-
     }
     
     .collapse-content {        
         margin: 0;
         padding: 25px 20px 20px 20px;
         font-size: 18px;
-        background-color: rgba(246, 246, 246, 0.45);        
+        background-color: rgba(246, 246, 246, 0.45);    
     }
 
-    .openContent {
-       // animation: open 5s forwards;
-        animation: openContent 5s ;
-      
+    .fa-chevron-up {
+        transition: transform 0.3s ease; 
     }
-
-    @keyframes openContent {
-        0%{transform: translateY(-100%);}
-        100%{transform: translateY(0%);}
-        
+    .open {
+        transform: rotate(-180deg);
     }
+    
+    @media (max-width: 900px) {
+        margin: 0 70px;
 
+        .collapse-title {
+            font-size: 15px;
+        }
 
+        .collapse-content {
+            font-size: 12px;
+        }
+      }
+
+    @media (max-width: 500px) {
+        margin: 0 30px;
+
+        .collapse-title {
+            font-size: 13px;
+        }
+      }
 }
 

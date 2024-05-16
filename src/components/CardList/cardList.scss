@@ -1,19 +1,23 @@
-// .container {
-//     background-color: grey;
-//     border-radius: 25px;
-//     display: grid;
-//     grid-template-columns: repeat(3, 1fr);    
-//     justify-items: center;
-//     gap: 50px;
-//     padding: 50px 0;    
-// }
-
 .cardList {
-    background-color: #F6F6F6;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 50px;
+    padding: 50px;
     border-radius: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    padding: 50px 0;
-    justify-content: center;
+    background-color: #F6F6F6;
+
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+        padding: 25px;
+    }
+
+    @media (max-width: 500px) {
+        grid-template-columns: repeat(1,1fr);
+        background-color: white;
+        padding: 0;
+        gap: 22px;
+        
+    }
 }

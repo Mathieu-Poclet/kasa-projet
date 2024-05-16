@@ -89,7 +89,6 @@ function Property({datas}) {
             </div>
         </div>
     )
- 
 }
 
 export default Property

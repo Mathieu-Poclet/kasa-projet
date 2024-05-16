@@ -1,6 +1,10 @@
 .error {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     color: rgba(255, 96, 96, 1);
+    gap: 139px;
+    padding: 94px 0 139px 0;
     
     h1 {
         
@@ -8,8 +12,46 @@
             weight: 700;
             size: 288px;
         }
-        margin: 0;
+        line-height: 75%;
+    }
+
+    p {
+        font: {
+            size: 36px;
+            weight: 500;
+        }
+    }
+
+    .link {
+        font: {
+            size: 18px;
+            weight: 500
+        }
+        color: black;
     }
     
+    @media (max-width: 900px) {
+        h1 {
+            font-size: 110px;
+        }
 
+        p {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .link {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        h1 {
+            font-size: 96px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
 }

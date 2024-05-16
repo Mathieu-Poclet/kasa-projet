@@ -1,9 +1,7 @@
 import "./card.scss"
 import { Link } from "react-router-dom"
 
-function Card({title, id, datas}) {
-
-    
+function Card({title, id, datas, cover}) {
 
     const handleClick = (id) => {
 
@@ -15,8 +13,9 @@ function Card({title, id, datas}) {
     } 
 
     return (
-        <Link to={"./appartement/"+id}>
-            <div className="card" onClick={() => handleClick(id)}>
+        <Link to={"./appartement/"+id} className="card">
+            <div className="image-container" onClick={() => handleClick(id)}>
+                <img src={cover} alt={title} />
                 <h2>{title}</h2>
             </div>
         </Link>

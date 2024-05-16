@@ -39,4 +39,32 @@
         left: 50%;
         transform: translate(-50%);
     }     
+
+    @media (max-width: 900px) {
+        img {
+            height: 350px;
+        }
+
+        .prev {
+            font-size: 40px;
+        }
+
+        .next {
+            font-size: 40px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        img {
+            height: 255px;
+        }
+
+        .prev {
+            font-size: 20px;
+        }
+
+        .next {
+            font-size: 20px;
+        }     
+    }
 }

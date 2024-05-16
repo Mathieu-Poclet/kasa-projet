@@ -8,22 +8,17 @@ const Collapse = ({title, content}) => {
     const handleClick = () => {
         setOpen(!open)
     }
-    let addOpenClass = open ? ' active' : null
-    let addCloseClass = !open ? ' active': null
-    const chevron = "fa-solid fa-chevron-up pointer"
-    const contento = "collapse-content"
 
     return(
         <div className="collapse">
             <div className="collapse-title">
                 {title} 
-                <i className={`${chevron} openRotation${addOpenClass} closeRotation${addCloseClass} `} onClick={handleClick}></i>
+                <i 
+                    className={`fa-solid fa-chevron-up pointer ${open ? 'open' : ''}`}
+                    onClick={handleClick}>
+                </i>
             </div>
-            {open && (
-                <div className={`${contento} openContent${addOpenClass} `}>
-                    {content}
-                </div>
-            )}
+            {open && <div className="collapse-content">{content}</div>}
         </div>
     )
 }

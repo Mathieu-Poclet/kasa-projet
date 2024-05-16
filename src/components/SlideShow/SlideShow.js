@@ -31,13 +31,11 @@ function SlideShow({datas}) {
                             <img src={data.pictures[index]} alt="vue appartement" /> 
                         </div>
                     )
-                }     
-                
+                }           
             })}                
         </div>
     )
 }
-
 
 export default SlideShow
 

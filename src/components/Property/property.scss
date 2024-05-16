@@ -1,10 +1,7 @@
 .property {
-    // display: flex;
-    // flex-direction: column;
     
     .general-property {
         display: flex;
-        //flex-direction: row;
         justify-content: space-between;
         .section1 {
 
@@ -13,27 +10,23 @@
                 font : {
                     weight: 500;
                     size: 36px;
-                }
-              
+                }  
             }
 
             .location {
                 font : {
                     weight: 500;
                     size: 18px;
-                }
-              
+                }    
             }
 
             .tags {
                 display: flex;
-                //flex-direction: row;
                 color: white;
                 font : {
                     weight: 700;
                     size: 14px;
-                }
-                
+                } 
                 gap: 10px;
                 list-style-type: none;
                 margin: 20px 0;
@@ -43,8 +36,7 @@
                     background-color: #FF6060;
                     border-radius: 10px;
                     min-width: 115px;
-                    padding: 0 10px;
-                    height: 25px;
+                    padding: 4px 10px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -56,11 +48,9 @@
             
             .host {
                 display: flex;
-                //flex-direction: row;
                 justify-content: end;
                 gap: 10px;
                 
-
                 p {
                     display: flex;
                     align-items: center;
@@ -90,16 +80,53 @@
                 }
             }    
         }
-    }  
+        @media (max-width: 900px) {
+            flex-direction: column;
+            .section1 {
+                
+                .title {
+                    font-size: 24px;
+                }
+                .location {
+                    font-size: 14px;
+                }
+                .tags {
+                    font-size: 10px;
+                    text-align: center;
+
+                    li {
+                        min-width: 84px;
+                    }
+                }
+            }
+
+            .section2 {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                padding-bottom: 20px;
+            }
+        }
+    
+        @media (max-width: 500px) {
+
+            
+            .section1 {
+                
+                .title {
+                    font-size: 18px;
+                }
+                
+            }
+          }
+    } 
 }
 
 .property-collapse {
     display: flex;
-    //flex-direction: row;
     gap: 76px;
 
     div {
-       // width: 100%;
         margin: 0;
         flex: 1;
     }    
@@ -107,5 +134,10 @@
     .equipmentList {
         padding: 0;
         list-style-type: none;
+    }
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        gap: 20px;
     }
 }

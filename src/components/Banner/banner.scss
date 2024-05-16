@@ -1,5 +1,5 @@
 .banner {
-    position: relative;    
+    position: relative;  
     
     img {
         width: 100%;
@@ -45,7 +45,22 @@
         justify-content: center;
         color: white;
         font-size: 48px;
-        font-weight: 700;          
+        font-weight: 700; 
+        padding: 16px;         
+    }
+
+    @media (max-width: 900px) {
+
+        .bannerTitle {
+            font-size: 36px;
+        }
+    }
+
+    @media (max-width: 500px) {
+
+        .bannerTitle {
+            font-size: 24px;  
+        }
     }
 }
 
