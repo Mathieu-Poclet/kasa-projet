@@ -1,8 +1,7 @@
-import "../styles/slideShow.scss"
+import "./slideShow.scss"
 import { useState } from "react";
-//import {FontAwesomeIcon} from "react"
 
-function SlideShow({datas, setDatas}) {
+function SlideShow({datas}) {
 
     const [index, setIndex] = useState(0)
 
@@ -21,8 +20,8 @@ function SlideShow({datas, setDatas}) {
                     return (                   
                         <div key={`${data.title}-${index}`} className="gallery">
                             <img src={data.pictures[index]} alt="vue appartement" />                    
-                            <button className="left" onClick={() => previous(data)}><i className="fa-solid fa-chevron-left pointer"></i></button>
-                            <button className="right" onClick={() => next(data)}><i className="fa-solid fa-chevron-right pointer"></i></button>                    
+                            <button className="prev" onClick={() => previous(data)}><i className="fa-solid fa-chevron-left pointer"></i></button>
+                            <button className="next" onClick={() => next(data)}><i className="fa-solid fa-chevron-right pointer"></i></button>                    
                             <div className="count">{index + 1}/{data.pictures.length}</div>
                         </div>
                     )

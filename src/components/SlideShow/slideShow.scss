@@ -1,0 +1,42 @@
+.gallery {
+       position: relative;
+    
+    img{
+        height: 415px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;      
+          
+    }
+
+    .prev {
+        border-style: none;
+        background-color: transparent;        
+        font-size: 78px;  
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 23px;            
+        top: 0;
+    }
+
+    .next {
+        border-style: none;
+        background-color: transparent;        
+        font-size: 78px;  
+        color: white;
+        position: absolute;
+        bottom: 0;            
+        right: 23px;
+        top: 0;
+    }   
+    
+    .count {
+        color: white;
+        font-size: 18px;
+        position: absolute;
+        bottom: 23px;
+        left: 50%;
+        transform: translate(-50%);
+    }     
+}

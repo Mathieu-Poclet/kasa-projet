@@ -1,11 +1,10 @@
 .property {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     
-
     .general-property {
         display: flex;
-        flex-direction: row;
+        //flex-direction: row;
         justify-content: space-between;
         .section1 {
 
@@ -28,7 +27,7 @@
 
             .tags {
                 display: flex;
-                flex-direction: row;
+                //flex-direction: row;
                 color: white;
                 font : {
                     weight: 700;
@@ -57,7 +56,7 @@
             
             .host {
                 display: flex;
-                flex-direction: row;
+                //flex-direction: row;
                 justify-content: end;
                 gap: 10px;
                 
@@ -89,25 +88,24 @@
                     display: flex;
                     gap: 10px;
                 }
-            }
-            
+            }    
         }
-    }
+    }  
+}
 
-    .property-collapse {
-        display: flex;
-        //flex-direction: row;
-        gap: 76px;
+.property-collapse {
+    display: flex;
+    //flex-direction: row;
+    gap: 76px;
 
-        div {
-           // width: 100%;
-            margin: 0;
-            flex: 1;
-        }    
+    div {
+       // width: 100%;
+        margin: 0;
+        flex: 1;
+    }    
 
-        .equipmentList {
-            padding: 0;
-            list-style-type: none;
-        }
+    .equipmentList {
+        padding: 0;
+        list-style-type: none;
     }
 }

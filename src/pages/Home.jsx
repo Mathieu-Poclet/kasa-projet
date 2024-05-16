@@ -1,6 +1,6 @@
-import Banner from '../components/Banner'
-import CardList from '../components/CardList'
 import plage from "../assets/plage.png"
+import Banner from '../components/Banner/Banner'
+import CardList from '../components/CardList/CardList'
 
 function Home() {  
 

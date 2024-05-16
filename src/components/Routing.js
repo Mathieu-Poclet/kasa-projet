@@ -4,13 +4,10 @@ import Home from '../pages/Home'
 import About from '../pages/About'
 import Error from '../pages/Error'
 import AppartementPage from '../pages/AppartementPage'
-import Header from './Header'
-import Footer from './Footer'
+import Header from './Header/Header'
+import Footer from './Footer/Footer'
 
 function Routing() {
-
-        
-
     return (
         <div>
             <Router>
@@ -21,8 +18,8 @@ function Routing() {
                 <Route path="/appartement/:id" element={<AppartementPage />} />
                 <Route path="*" element={<Error />} />
             </Routes>     
-            </Router>
             <Footer />
+            </Router>
         </div>
     )
 }
